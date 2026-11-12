@@ -1,0 +1,304 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #292929;
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 7%;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+nav a, .text-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.theme-toggle, .menu-toggle {
+  padding: 7px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  color: #222;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 8%;
+  scroll-margin-top: 70px;
+}
+
+.hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.eyebrow {
+  color: #76513f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+h1 span {
+  color: #76513f;
+}
+
+h2 {
+  font-size: 29px;
+  margin: 5px 0 18px;
+}
+
+.hero h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-intro {
+  max-width: 700px;
+  color: #666;
+}
+
+.photo-placeholder {
+  width: 210px;
+  height: 235px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #666;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 0;
+  background: #76513f;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.button:hover {
+  background: #5e3f30;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid #ddd;
+  max-width: 800px;
+}
+
+.education-item h3, .education-item p {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.date, .muted {
+  color: #777;
+  font-size: 14px;
+}
+
+.interest-list {
+  max-width: 850px;
+}
+
+
+
+.interest-list h3 {
+  margin: 0 0 5px;
+}
+
+.interest-list p {
+  margin: 0;
+  color: #666;
+}
+
+.project-grid, .hobby-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  padding: 17px;
+  border: 1px solid #ddd;
+}
+
+.project-image {
+  height: 130px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+
+.project p, .hobby-list p {
+  color: #666;
+}
+
+.tags {
+  font-size: 13px;
+}
+
+.hobby-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hobby-list > div {
+  border-top: 1px solid #aaa;
+  padding-top: 8px;
+}
+
+.achievement-list {
+  padding-left: 20px;
+}
+
+.achievement-list li {
+  margin: 12px 0;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
+}
+
+.contact-details a {
+  color: #76513f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  font: inherit;
+  background: white;
+  color: #222;
+  margin-bottom: 7px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form .button {
+  align-self: flex-start;
+}
+
+.form-message {
+  min-height: 22px;
+  font-size: 14px;
+}
+
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+body.dark .site-header {
+  background: #222;
+  border-color: #444;
+}
+
+body.dark .logo, body.dark nav a {
+  color: #eee;
+}
+
+body.dark .project, body.dark .photo-placeholder, body.dark .project-image {
+  background: #303030;
+  border-color: #555;
+  color: #ddd;
+}
+
+body.dark input, body.dark textarea {
+  background: #303030;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark .track {
+  background: #444;
+}
+
+body.dark .education-item, body.dark .interest-list > div, body.dark footer {
+  border-color: #444;
+}
